@@ -20,6 +20,7 @@ a second tab with basic EDA on the dataset.
 - The number of episodes of each anime
 - The average rating for each anime compared to the number of users who gave ratings
 
+
 ## Tasks:
 -Data Preprocessing:
 -Feature Extraction:
