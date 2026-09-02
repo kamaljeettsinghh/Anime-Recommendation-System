@@ -1,4 +1,4 @@
-# Similar — Anime Recommender (Streamlit)
+# Similar — Anime Recommender (Streamlit, Html)
 
 A content-based anime recommender: pick a title, get the 10 closest matches by
 genre and format (TV/Movie/OVA/…), using TF-IDF + cosine similarity. Includes
@@ -9,20 +9,23 @@ a second tab with basic EDA on the dataset.
 - `app.py` — the Streamlit app
 - `anime.csv` — the dataset the app reads (must stay next to `app.py`)
 - `requirements.txt` — Python dependencies
+- `anime_recommender.html` - HTML Deployed
 
-## Run it locally
+## Processed Dataset Description:
 
-Requires Python 3.9+.
+- Unique ID of each anime
+- Anime title
+- Anime broadcast type, such as TV, OVA, etc
+- anime genre
+- The number of episodes of each anime
+- The average rating for each anime compared to the number of users who gave ratings
 
-```bash
-cd anime_streamlit_app
-pip install -r requirements.txt
-streamlit run app.py
-```
+## Tasks:
+-Data Preprocessing:
+-Feature Extraction:
+-Decide on the features that will be used for computing similarity (e.g., genres, user ratings).
+-Convert categorical features into numerical representations if necessary.
 
 
-## Deploy 
 
-This environment has no internet access, so it can't push code to GitHub or
-stand up a live URL for you — but deploying yourself takes about five
-minutes:
+
